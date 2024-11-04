@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application RH</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 8px; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <h1>Gestion des Employés</h1>
+    <form id="employeeForm">
+        <input type="text" id="name" placeholder="Nom" required>
+        <input type="number" id="age" placeholder="Âge" required>
+        <input type="text" id="position" placeholder="Poste" required>
+        <button type="submit">Ajouter / Mettre à jour</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Âge</th>
+                <th>Poste</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="employeeTableBody"></tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
